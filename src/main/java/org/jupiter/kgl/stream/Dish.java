@@ -20,6 +20,11 @@ public class Dish {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return String.format("{ DishName: %s, Calories: %d, Type: %s }", name, calories, type.name());
+    }
+
     public enum Type{
         MEAT, FISH, OTHER
     }
